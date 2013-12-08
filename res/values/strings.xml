@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Montster</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="view_dates">View Times Laser was Crossed</string>
+    <string name="view_camera">View Live Camera</string>
+    <string name="security">Security System</string>
+
+</resources>
