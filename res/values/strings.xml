@@ -7,5 +7,7 @@
     <string name="view_dates">View Times Laser was Crossed</string>
     <string name="view_camera">View Live Camera</string>
     <string name="security">Security System</string>
+    <string name="light_on">Turn Light On</string>
+    <string name="light_off">Turn Light Off</string>
 
 </resources>
