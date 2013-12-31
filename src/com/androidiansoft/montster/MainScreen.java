@@ -121,7 +121,7 @@ public class MainScreen extends Activity {
 					editor.commit();
 				} else if (result.trim().equals("0")) {
 					light.setText(R.string.light_off);
-					editor.putInt(LIGHT_PREF, 0);
+					editor.putInt(LIGHT_PREF, 0); 
 					editor.commit();
 				}
 			}
