@@ -3,16 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="71dp"
-        android:text="@string/security"
-        android:textSize="40dp" />
-
     <Button
         android:id="@+id/viewCam"
         android:layout_width="wrap_content"
@@ -22,20 +12,21 @@
         android:text="@string/view_camera" />
 
     <Button
-        android:id="@+id/viewDates"
+        android:id="@+id/light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/viewCam"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
-        android:text="@string/view_dates" />
+        android:layout_marginTop="20dp" />
 
-    <Button
-        android:id="@+id/light"
+    <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/viewDates"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:text="@string/security"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp" />
 
 </RelativeLayout>

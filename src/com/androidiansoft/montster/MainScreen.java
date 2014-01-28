@@ -26,9 +26,8 @@ import android.widget.Button;
 
 public class MainScreen extends Activity {
 
-	Button viewList;
-	Button viewCam;
 	Button light;
+	Button viewCam;
 	SharedPreferences preferences;
 	public static final String LIGHT_PREF = "light_pref";
 	
@@ -36,7 +35,7 @@ public class MainScreen extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
-        viewList = (Button) findViewById(R.id.viewDates);
+        
         viewCam = (Button) findViewById(R.id.viewCam);
         light = (Button) findViewById(R.id.light);
         
@@ -54,28 +53,20 @@ public class MainScreen extends Activity {
 			changeLights();
 		}
         
-        viewList.setOnClickListener(new OnClickListener() {
-		
+        light.setOnClickListener(new OnClickListener() {
+			
 			public void onClick(View v) {
-				Intent in = new Intent(getApplicationContext(), DatesList.class);
-				startActivity(in);
+				changeLights();
 			}
 		});
         
         viewCam.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
-				Uri uri = Uri.parse("http://192.168.0.128:91");
+				Uri uri = Uri.parse("http://68.110.111.35:91");
 				 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 				 startActivity(intent);
 				
-			}
-		});
-        
-        light.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				changeLights();
 			}
 		});
     }
